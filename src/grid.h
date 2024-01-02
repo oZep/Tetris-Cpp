@@ -1,4 +1,6 @@
 #pragma once
+#ifndef GRID_H
+#define GRID_H
 
 class Grid {
     public: 
@@ -11,3 +13,5 @@ class Grid {
         int numCol;
         int cellSize;
 };
+
+#endif

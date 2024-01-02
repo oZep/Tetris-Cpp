@@ -1,6 +1,6 @@
 #pragma once
-#ifndef GRID_H
-#define GRID_H
+#include <vector>
+#include <raylib.h>
 
 class Grid {
     public: 
@@ -8,10 +8,11 @@ class Grid {
         void Initialize();
         void Print();
         int grid[20][10];
+        void Draw();
     private:
+        std::vector<Color> GetCellColors();
         int numRows;
         int numCol;
         int cellSize;
+        std::vector<Color> colors;
 };
-
-#endif

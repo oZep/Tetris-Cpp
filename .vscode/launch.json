@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/joeyissa/Downloads/Tetris-Cpp/src",
-      "program": "/Users/joeyissa/Downloads/Tetris-Cpp/src/build/Debug/outDebug"
+      "cwd": "/Users/joeyissa/Downloads/Tetris-Cpp",
+      "program": "/Users/joeyissa/Downloads/Tetris-Cpp/build/Debug/outDebug"
     }
   ]
 }

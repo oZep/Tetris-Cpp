@@ -1,4 +1,5 @@
 #include <raylib.h>
+#include "grid.h"
 
 int main() {
     // Determin the Game Window Width and Height
@@ -6,6 +7,9 @@ int main() {
     const int screenHeight = 600;
 
     Color screenColor = Color{24, 20, 211, 255};
+
+    Grid grid = Grid();
+    grid.Print();
 
     // Initialize the Window
     InitWindow(screenWidth, screenHeight, "Tetris");

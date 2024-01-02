@@ -6,11 +6,12 @@ int main() {
     const int screenWidth = 300;
     const int screenHeight = 600;
 
-    Color screenColor = Color{24, 20, 211, 255};
+    Color screenColor = Color{255, 255, 255, 255};
 
     Grid grid = Grid();
     grid.Print();
 
+    
     // Initialize the Window
     InitWindow(screenWidth, screenHeight, "Tetris");
 

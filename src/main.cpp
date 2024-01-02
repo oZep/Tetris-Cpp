@@ -3,20 +3,20 @@
 
 int main()
 {
-    Color darkGreen = Color{20, 160, 133, 255};
+    Color screenColor = Color{220, 100, 13, 255};
 
-    const int screenWidth = 800;
+    const int screenWidth = 300;
     const int screenHeight = 600;
 
     Ball ball = Ball();
 
-    InitWindow(screenWidth, screenHeight, "My first RAYLIB program!");
+    InitWindow(screenWidth, screenHeight, "Tetris");
     SetTargetFPS(60);
 
     while (!WindowShouldClose())
     {
         BeginDrawing();
-        ClearBackground(darkGreen);
+        ClearBackground(screenColor);
         ball.Update();
         ball.Draw();
         EndDrawing();

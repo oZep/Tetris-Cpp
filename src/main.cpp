@@ -1,5 +1,6 @@
 #include <raylib.h>
 #include "grid.h"
+#include "tiles.cpp"
 
 int main() {
     // Determin the Game Window Width and Height
@@ -10,6 +11,8 @@ int main() {
 
     Grid grid = Grid();
     grid.Print();
+
+    LBlock block = LBlock();
 
     
     // Initialize the Window
@@ -27,6 +30,7 @@ int main() {
         ClearBackground(screenColor);
 
         grid.Draw();
+        block.Draw();
 
         // Here goes all the Game Logic
 

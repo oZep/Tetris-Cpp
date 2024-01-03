@@ -3,7 +3,7 @@
 #include "tiles.cpp"
 
 int main() {
-    // Determin the Game Window Width and Height
+    // Determine the Game Window Width and Height
     const int screenWidth = 300;
     const int screenHeight = 600;
 

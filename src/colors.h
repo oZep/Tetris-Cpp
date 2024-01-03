@@ -3,7 +3,7 @@
 #include <vector>
 
 
-extern const Color darkGrey;
+extern const Color black;
 extern const Color green;
 extern const Color red;
 extern const Color oragne;

@@ -25,7 +25,7 @@ int main() {
         // Clear canvas to a specific color to avoid flicker
         ClearBackground(screenColor);
 
-        Game.Draw();
+        game.Draw();
 
         // teardown Canvas
         EndDrawing();

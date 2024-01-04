@@ -13,7 +13,7 @@ Block Game::GetRandomBlock() {
     if (blocks.empty()) {
         blocks = GetAllBlocks();
     }
-    int randomIndex = rand() * blocks.size();
+    int randomIndex = std::rand() % blocks.size(); // memory (seg) fault cause std::rand() * blocks.size();
     Block block = blocks[randomIndex];
     blocks.erase(blocks.begin() + randomIndex);
     return block;
@@ -53,15 +53,15 @@ void Game::MoveBlockLeft() {
 
 void Game::MoveBlockRight() {
     currentBlock.Move(0, 1);
-    if (!IsBlockOutside()) {
+    if (IsBlockOutside()) {
         currentBlock.Move(0, -1);
     }
 }
 
 void Game::MoveBlockDown() {
-     currentBlock.Move(-1, 0);
-    if (!IsBlockOutside()) {
-        currentBlock.Move(1, 0);
+     currentBlock.Move(1, 0);
+    if (IsBlockOutside()) {
+        currentBlock.Move(-1, 0);
     } 
 }
 

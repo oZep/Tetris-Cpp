@@ -45,20 +45,23 @@ void Game::HandleInput()
 }
 
 void Game::MoveBlockLeft() {
+    currentBlock.Move(0, -1);
+    if (IsBlockOutside()) {
+        currentBlock.Move(0, 1);
+    }
+}
+
+void Game::MoveBlockRight() {
+    currentBlock.Move(0, 1);
     if (!IsBlockOutside()) {
         currentBlock.Move(0, -1);
     }
 }
 
-void Game::MoveBlockRight() {
-    if (!IsBlockOutside()) {
-        currentBlock.Move(0, 1);
-    }
-}
-
 void Game::MoveBlockDown() {
+     currentBlock.Move(-1, 0);
     if (!IsBlockOutside()) {
-        currentBlock.Move(-1, 0);
+        currentBlock.Move(1, 0);
     } 
 }
 

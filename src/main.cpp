@@ -1,6 +1,5 @@
 #include <raylib.h>
-#include "grid.h"
-#include "tiles.cpp"
+#include "game.h"
 
 int main() {
     // Determine the Game Window Width and Height
@@ -9,10 +8,7 @@ int main() {
 
     Color screenColor = Color{255, 255, 255, 255};
 
-    Grid grid = Grid();
-    grid.Print();
-
-    TBlock block = TBlock();
+    Game game = Game();
 
     
     // Initialize the Window
@@ -29,10 +25,7 @@ int main() {
         // Clear canvas to a specific color to avoid flicker
         ClearBackground(screenColor);
 
-        grid.Draw();
-        block.Draw();
-
-        // Here goes all the Game Logic
+        Game.Draw();
 
         // teardown Canvas
         EndDrawing();

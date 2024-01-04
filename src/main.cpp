@@ -20,6 +20,7 @@ int main() {
     // The Game Loop
     while (!WindowShouldClose() /*WindowShouldClose returns true if esc is clicked and closes the window*/) {
 
+        game.HandleInput();
         // Setup Canvas
         BeginDrawing();
         // Clear canvas to a specific color to avoid flicker
